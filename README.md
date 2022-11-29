@@ -8,8 +8,7 @@ For each tutorial: write as if you're *teaching a child how to cook*.
 
 Checklist:
 
-- [ ] Start to finish
-- [ ] Holds the readers hand
+- [ ] Holds the readers hand from start to finish
 - [ ] Gives a sense of achievement
 - [ ] Works for everyone, with minimal explanation
 - [ ] Also teaches what ***you*** take for granted
