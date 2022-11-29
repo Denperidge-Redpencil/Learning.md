@@ -9,9 +9,10 @@ For each tutorial: write as if you're *teaching a child how to cook*.
 Checklist:
 
 - [ ] Start to finish
-- [ ] Holds the readers hand with minimal explanation
+- [ ] Holds the readers hand
 - [ ] Gives a sense of achievement
-- [ ] Also teaches what *you* take for granted
+- [ ] Works for everyone, with minimal explanation
+- [ ] Also teaches what ***you*** take for granted
 
 ### How-To's?
 For each how-to: write down how to achieve **1** specific thing as if it were a *cooking recipe*.
