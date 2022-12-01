@@ -1,4 +1,6 @@
-Some commands & principles I've learned from the course that I might want to have in an overview!
+# Ember.js
+
+Some commands & principles I've learned from the [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/) that I might want to have in an overview!
 
 ## Design principles
 ### The rule of Least Power
@@ -13,5 +15,48 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 
 ## Commands
 
+```sh
+npm install -g ember-cli  # Install Ember-cli
+
+ember new $projectname --no-welcome --embroider  # New project with embroider enabled
+
+# Run Ember project
+ember server  
+ember s
+
+
+```
+
+## Install & use a CSS framework through NPM & PostCSS
+```sh
+npm install -D ember-cli-postcss  # Allows using postcss
+npm install -D $npm-css-framework
+```
+
+```js
+// ember-cli-build.js
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function (defaults) {
+    let app = new EmberApp(defaults, {
+        // ...
+        postcssOptions: {
+            compile: {
+                plugins: [{ module: require('tailwindcss') }],
+            },
+        },
+        // ...
+    });
+    // ...
+}
+// ...
+```
+
+```css
+/* app/styles/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
 Thanks to [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/)
