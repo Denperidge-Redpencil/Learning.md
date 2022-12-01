@@ -40,7 +40,19 @@ ember generate route $routename
 ember g route $routename
 ```
 
-## Install & use a CSS framework through NPM & PostCSS
+## How-to
+
+### Tracked property
+"If a property is used in the template, it should be marked as tracked"
+```js
+import { tracked } from '@glimmer/tracking';
+
+class Band {
+    @tracked name;
+    // ...
+```
+
+### Install & use a CSS framework through NPM & PostCSS
 ```sh
 npm install -D ember-cli-postcss  # Allows using postcss
 npm install -D $npm-css-framework
