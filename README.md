@@ -3,6 +3,7 @@ I'm learning new languages and frameworks! So I'm keeping notes on the things I'
 
 ## Notes
 - [SPARQL](sparql)
+- [Ember.js](emberjs)
 
 ## Other notes/shadow realm
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
