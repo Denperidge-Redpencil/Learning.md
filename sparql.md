@@ -1,5 +1,7 @@
 # SPARQL
 
+Notes I made while watching [Wouter Beek's series on SparQL](https://www.youtube.com/watch?v=nbUYrs_wWto&list=PLaa8QYrMzXNnzY-4YVM5507iZuESWVcnU&index=1)
+
 ## Terms
 Syntax:
 - `?variable`
