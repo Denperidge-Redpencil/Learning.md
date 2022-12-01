@@ -11,6 +11,7 @@ There's a [repo]() in case you want to contribute, or view it on [GitHub Pages](
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
 
 - [SPARQL](Notes/Other/sparql)
+- [Ember.js](Notes/Other/emberjs)
 
 ## License
 The sources and people I'm learning from have their own copyrights (and if I accidentally infringed on that with one of my notes, I will swiftly remove whatever that is).
