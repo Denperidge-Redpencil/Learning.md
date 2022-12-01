@@ -5,8 +5,13 @@ I'm learning new languages and frameworks! So I'm keeping notes on the things I'
 - [SPARQL](sparql)
 - [Ember.js](emberjs)
 
-## Other notes/shadow realm
+### Other notes/shadow realm
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
 
 - [SPARQL](Other/sparql)
+
+## License
+The sources and people I'm learning from have their own copyrights (and if I accidentally infringed on that with one of my notes, I will swiftly remove whatever that is).
+
+But mostly this is just notes with some code excerpts, made with the help of the sources & friends. And do with that what you want! Its licensed under the Public Domain with [Creative Commons Zero v1.0 Universal](LICENSE)
 
