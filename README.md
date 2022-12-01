@@ -1,14 +1,16 @@
 # Denperidge's Learning.md
 I'm learning new languages and frameworks! So I'm keeping notes on the things I've learned so I can have that to look back upon because memory and stuff.
 
+There's a [repo]() in case you want to contribute, or view it on [GitHub Pages](https://denperidge.github.io/Learning.md/)!
+
 ## Notes
-- [SPARQL](sparql)
-- [Ember.js](emberjs)
+- [SPARQL](Notes/sparql)
+- [Ember.js](Notes/emberjs)
 
 ### Other notes/shadow realm
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
 
-- [SPARQL](Other/sparql)
+- [SPARQL](Notes/Other/sparql)
 
 ## License
 The sources and people I'm learning from have their own copyrights (and if I accidentally infringed on that with one of my notes, I will swiftly remove whatever that is).
