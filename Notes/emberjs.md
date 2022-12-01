@@ -13,6 +13,14 @@ Also see 11:30 in this [Emberweekend episode](https://emberweekend.com/episodes/
 ### Handlebars' fail-softness
 undefined/null properties get ignored in Handlebars. This gives cleaner output and less conditional code, but is something to keep in mind when debugging.
 
+### Routing & outlet
+- Everything gets routed through the application.hbs, useful for:
+    - Setting the language
+    - Fetching data to render a common layout
+    - Basically to define structure & common markup across your application
+
+Subroutes render their content into the parent template {{outlet}}
+
 ## Commands
 
 ```sh
@@ -24,7 +32,9 @@ ember new $projectname --no-welcome --embroider  # New project with embroider en
 ember server  
 ember s
 
-
+# Generate route
+ember generate route $routename
+ember g route $routename
 ```
 
 ## Install & use a CSS framework through NPM & PostCSS
