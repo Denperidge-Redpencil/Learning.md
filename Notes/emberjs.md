@@ -18,8 +18,10 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - Setting the language
     - Fetching data to render a common layout
     - Basically to define structure & common markup across your application
-
-Subroutes render their content into the parent template {{outlet}}
+- Subroutes render their content into the parent template {{outlet}}
+- ```js
+    this.route('bands'); == this.route('bands', { path: 'bands' }, function () {});
+  ```
 
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
