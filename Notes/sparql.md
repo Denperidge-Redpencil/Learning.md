@@ -12,7 +12,8 @@ Syntax:
 
 ?s ?p ?o --> subject/predicate/object
 
-(Table imported from [this video](https://youtu.be/QPDRPmZ9f0w?t=644))
+---
+
 | Notation     | Example                                             |
 | ------------ | --------------------------------------------------- |
 | Absolute IRI | `<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>` |
@@ -20,14 +21,20 @@ Syntax:
 | Prefixed IRI | `rdf:type` (requires prefix)                        |
 | Type IRI     | `a` (only in predicate position)                    |
 
-(Table imported from [this video](https://youtu.be/Xi0rE1xczb8?t=225))
+(Table imported from [this video](https://youtu.be/QPDRPmZ9f0w?t=644))
+
+---
+
 | Symbol | Notation type |
 | ------ | ------------- |
 | `.`    | Simple triple |
 | `;`    | Predicate list|
 | `,`    | Object list   |
 
-(Table imported from [here](https://youtu.be/M9MxKjz0KE0?t=118))
+(Table imported from [this video](https://youtu.be/Xi0rE1xczb8?t=225))
+
+---
+
 | Example | Datatype IRI |
 | ------- | ------------ |
 | false   | xsd:boolean  |
@@ -35,7 +42,12 @@ Syntax:
 | 1.1     | xsd:decimal  |
 | 1.1e0   | xsd:double   |
 | "abc"   | xsd:string   |
+
 `prefix xsd: <http://www.w3.org/2001/XMLSchema#>`
+
+(Table imported from [here](https://youtu.be/M9MxKjz0KE0?t=118))
+
+---
 
 
 - ~~Okay so one thing you have to understand is that you can't look at sparql like most code where it goes line-by-line. The entire thing gets parsed at once~~
