@@ -27,9 +27,11 @@ Subroutes render their content into the parent template {{outlet}}
 ## Commands
 
 ```sh
-npm install -g ember-cli  # Install Ember-cli
+# Install Ember-cli
+npm install -g ember-cli
 
-ember new $projectname --no-welcome --embroider  # New project with embroider enabled
+# New project with embroider enabled
+ember new $projectname --no-welcome --embroider
 
 # Run Ember project
 ember server  
@@ -38,6 +40,9 @@ ember s
 # Generate route
 ember generate route $routename
 ember g route $routename
+
+# Generate dynamic route
+ember g route bands/band --path=':id'
 ```
 
 ## How-to
