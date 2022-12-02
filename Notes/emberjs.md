@@ -42,6 +42,9 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 - Call using `<CamelisedName>` to distinguish from html
 - Previously used to only be called using {curly braces}
 
+### Controllers
+- The `@action` decorator (from `'@ember/object'`) is only needed if the function gets called from the template
+
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
