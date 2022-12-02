@@ -43,9 +43,9 @@ ember new $projectname --no-welcome --embroider
 ember server  
 ember s
 
-# Generate route
-ember generate route $routename
-ember g route $routename
+# Common ember generators
+ember generate {route,template} $routename
+ember g {route,template} $routename
 
 # Generate dynamic route
 ember g route bands/band --path=':id'
