@@ -59,8 +59,8 @@ ember server
 ember s
 
 # Common ember generators
-ember generate {route,template} $routename
-ember g {route,template} $routename
+ember generate {route,template,controller} $routename
+ember g {route,template,controller} $routename
 
 # Generate component...
 ember g component $componentname  # ...hbs
