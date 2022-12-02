@@ -47,6 +47,10 @@ ember s
 ember generate {route,template} $routename
 ember g {route,template} $routename
 
+# Generate component...
+ember g component $componentname  # ...hbs
+ember g component $componentname --with-component-class  # ...hbs & .js
+
 # Generate dynamic route
 ember g route bands/band --path=':id'
 
