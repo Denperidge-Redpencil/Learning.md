@@ -88,6 +88,19 @@ class Band {
 </LinkTo>
 ```
 
+### Component with optional block
+```handlebars
+{{#if (has-block)}}
+    {{yield this.data}}
+{{else}}
+    {{#each this.data as |data|}}
+        <input type="text"
+            placeholder={{data}}
+        />
+    {{/each}}
+{{/if}}
+```
+
 ### Install & use a CSS framework through NPM & PostCSS
 ```sh
 npm install -D ember-cli-postcss  # Allows using postcss
