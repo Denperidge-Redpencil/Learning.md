@@ -152,4 +152,19 @@ module.exports = function (defaults) {
 @tailwind utilities;
 ```
 
+### Router service
+```js
+import { inject as service } from '@ember/service';
+
+export default class NewController extends Controller {
+    @service router;
+
+    @action
+    save() {
+        // ...
+        this.router.transitionTo('models.model.property', model.id);
+    }
+}
+```
+
 Thanks to [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/)
