@@ -1,7 +1,7 @@
 # Denperidge's Learning.md
 I'm learning new languages and frameworks! So I'm keeping notes on the things I've learned so I can have that to look back upon because memory and stuff.
 
-There's a [repo]() in case you want to contribute, or view it on [GitHub Pages](https://denperidge.github.io/Learning.md/)!
+There's a [repo](https://github.com/Denperidge/Learning.md) in case you want to contribute, or view it on [GitHub Pages](https://denperidge.github.io/Learning.md/)!
 
 ## Notes
 - [SPARQL](Notes/sparql)
