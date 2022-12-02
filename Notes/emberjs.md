@@ -13,6 +13,16 @@ Also see 11:30 in this [Emberweekend episode](https://emberweekend.com/episodes/
 ### Handlebars' fail-softness
 undefined/null properties get ignored in Handlebars. This gives cleaner output and less conditional code, but is something to keep in mind when debugging.
 
+### Handlebars expressions
+
+| Expression    | ...is a...     | Definition location |
+| ------------- | -------------- | ------------------- |
+| {{data}}      | Block variable | Nearest block       |
+| {{this.data}} | Property       | Template's context  |
+| {{@data}}     | Argument       | Call site           |
+
+(See pages 772 of [Rock and Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/))
+
 ### Routing & outlet
 - Everything gets routed through the application.hbs, useful for:
     - Setting the language
