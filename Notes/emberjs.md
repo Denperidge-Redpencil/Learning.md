@@ -82,6 +82,9 @@ ember destroy route $routename
 ### Tracked property
 - "If a property is used in the template, it should be marked as tracked"
 - Getters (in components at least) are auto-tracked
+- Make sure to track the deepest object:
+    - `this.storage.bands.push()` --> `this.storage` doesn't get changed, so tracking that won't work; track `this.storage.bands` instead.
+    - You might have to use `this.storage.bands = tracked([])`, which you can get after running and importing `ember i tracked-built-ins`
 
 ```js
 import { tracked } from '@glimmer/tracking';
