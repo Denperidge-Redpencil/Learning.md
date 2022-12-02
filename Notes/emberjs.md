@@ -63,6 +63,19 @@ class Band {
     // ...
 ```
 
+### LinkTo dynamic path/model
+```handlebars
+{{!-- LinkTo using a single dynamic segment --}}
+<LinkTo @route="bands.band.songs" @model={{band.id}}>
+    {{band.name}}
+</LinkTo>
+
+{{!-- LinkTo using multiple dynamic segments --}}
+<LinkTo @route="bands.band.songs" @model={{array band1.id, band2.id}}>
+{{band.name}}
+</LinkTo>
+```
+
 ### Install & use a CSS framework through NPM & PostCSS
 ```sh
 npm install -D ember-cli-postcss  # Allows using postcss
