@@ -49,6 +49,9 @@ ember g {route,template} $routename
 
 # Generate dynamic route
 ember g route bands/band --path=':id'
+
+# Destroy route (removes corresponding routes/, templates/, tests/)
+ember destroy route $routename
 ```
 
 ## How-to
