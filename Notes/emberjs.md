@@ -27,6 +27,11 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - `app/templates/bands/band/songs.hbs`
 - The top-level route will be executed once, and by using `this.modelFor("modelname");` things can be passed down to the lower levels 
 
+### Components
+- Mostly self contained so they can be moved across applications
+- Call using `<CamelisedName>` to distinguish from html
+- Previously used to only be called using {curly braces}
+
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
