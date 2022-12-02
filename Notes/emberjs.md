@@ -72,7 +72,7 @@ class Band {
 
 {{!-- LinkTo using multiple dynamic segments --}}
 <LinkTo @route="bands.band.songs" @model={{array band1.id, band2.id}}>
-{{band.name}}
+    {{band.name}}
 </LinkTo>
 ```
 
