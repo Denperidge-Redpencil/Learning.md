@@ -66,7 +66,9 @@ ember destroy route $routename
 ## How-to
 
 ### Tracked property
-"If a property is used in the template, it should be marked as tracked"
+- "If a property is used in the template, it should be marked as tracked"
+- Getters (in components at least) are auto-tracked
+
 ```js
 import { tracked } from '@glimmer/tracking';
 
