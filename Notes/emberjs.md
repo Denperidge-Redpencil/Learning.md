@@ -35,7 +35,8 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 - `bands.band.songs` = full name. Entities in:
     - `app/routes/bands/band/songs.js`
     - `app/templates/bands/band/songs.hbs`
-- The top-level route will be executed once, and by using `this.modelFor("modelname");` things can be passed down to the lower levels 
+- The top-level route will be executed once, and by using `this.modelFor("modelname");` things can be passed down to the lower levels
+    - This has some implications! If you load in things in bands.band, navigate to bands.band.details, and then to `<LinkTo @route="bands.band>`, it will actually link to bands.band.index. That does *not* require it to pass bands.band, and thus it won't, and the loading happening within bands.band won't execute
 
 ### Components
 - Mostly self contained so they can be moved across applications
@@ -45,7 +46,6 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 ### Controllers
 - The `@action` decorator (from `'@ember/object'`) is only needed if the function gets called from the template
 - Controllers are singletons (single instances). If that gives any issues, use `resetController(controller) { /* reset values here */ }`
-
 
 
 ### Routes hook order
