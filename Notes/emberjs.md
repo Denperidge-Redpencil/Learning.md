@@ -56,10 +56,6 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 
 Sequence example: application(beforeModel -> model ->afterModel) --> route(beforeModel --> model --> afterModel)--> subroute(beforeModel --> model --> afterModel) -->application(setupController) --> route(setupController) --> subroute(setupController)
 
-
-## Links
-- Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
 ## Commands
 
 ```sh
@@ -178,4 +174,7 @@ export default class NewController extends Controller {
 }
 ```
 
-Thanks to [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/)
+
+## Links
+- Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+- Thanks to [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/)
