@@ -28,7 +28,7 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - Setting the language
     - Fetching data to render a common layout
     - Basically to define structure & common markup across your application
-- Subroutes render their content into the parent template {{outlet}}, and also inherit their parents' model()
+- Subroutes render their content into the parent template {{outlet}}, & the child routes also inherit their parents' model()
 - ```js
     this.route('bands'); == this.route('bands', { path: 'bands' }, function () {});
   ```
