@@ -36,14 +36,6 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - `app/routes/bands/band/songs.js`
     - `app/templates/bands/band/songs.hbs`
 - The top-level route will be executed once, and by using `this.modelFor("modelname");` things can be passed down to the lower levels 
-- Routes hook order
-    1. [`beforeModel(transition){}`](https://api.emberjs.com/ember/release/classes/Route/methods/?anchor=beforeModel)
-    2. [`model(params, transition){}`](https://api.emberjs.com/ember/release/classes/Route/methods/?anchor=model)
-    3. [`afterModel(model, transition){}`](https://api.emberjs.com/ember/release/classes/Route/methods/?anchor=afterModel)
-    4. [`setupController(controller, model, transitions)`](https://api.emberjs.com/ember/release/classes/Route/methods?anchor=setupController)
-    
-    Sequence example: application(beforeModel -> model -> afterModel) --> route(beforeModel --> model --> afterModel) --> subroute(beforeModel --> model --> afterModel) --> application(setupController) --> route(setupController) --> subroute(setupController)
-
 
 ### Components
 - Mostly self contained so they can be moved across applications
@@ -53,6 +45,17 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 ### Controllers
 - The `@action` decorator (from `'@ember/object'`) is only needed if the function gets called from the template
 - Controllers are singletons (single instances). If that gives any issues, use `resetController(controller) { /* reset values here */ }`
+
+
+
+### Routes hook order
+1. [`beforeModel(transition){}`](https://api.emberjs.comember/release/classes/Route/methods/?anchor=beforeModel)
+2. [`model(params, transition){}`](https://api.emberjs.comember/release/classes/Route/methods/?anchor=model)
+3. [`afterModel(model, transition){}`](https://api.emberjscom/ember/release/classes/Route/methods/?anchor=afterModel)
+4. [`setupController(controller, model, transitions)`(https://api.emberjs.com/ember/release/classes/Route/methodsanchor=setupController)
+
+Sequence example: application(beforeModel -> model ->afterModel) --> route(beforeModel --> model --> afterModel)--> subroute(beforeModel --> model --> afterModel) -->application(setupController) --> route(setupController) --> subroute(setupController)
+
 
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
