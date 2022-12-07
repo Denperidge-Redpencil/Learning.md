@@ -48,6 +48,7 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 ### Controllers
 - The `@action` decorator (from `'@ember/object'`) is only needed if the function gets called from the template
 - Controllers are singletons (single instances). If that gives any issues, use `resetController(controller) { /* reset values here */ }`
+- The `on` method creates listeners. On components, you have to use `off` to unregister, but controllers are only created once and remain until the app is closed, so `off` is not necessary.
 
 
 ### Routes hook order
