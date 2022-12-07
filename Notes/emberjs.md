@@ -58,6 +58,8 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 
 Sequence example: application(beforeModel -> model ->afterModel) --> route(beforeModel --> model --> afterModel)--> subroute(beforeModel --> model --> afterModel) -->application(setupController) --> route(setupController) --> subroute(setupController)
 
+There's also activate (fires when new route entered, but not when the model changes) and deactivate (fired when a route is completely exited, and not fired when only the model changes)
+
 ## Commands
 
 ```sh
