@@ -93,6 +93,8 @@ ember destroy route $routename
 ember test
 ember t
 ember t --server  # Open a browser & rerun tests with every change
+
+ember g acceptance-test $testname
 ```
 
 ## How-to
