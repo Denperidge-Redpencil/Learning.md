@@ -88,6 +88,11 @@ ember g route bands/band --path=':id'
 
 # Destroy route (removes corresponding routes/, templates/, tests/)
 ember destroy route $routename
+
+# Test
+ember test
+ember t
+ember t --server  # Open a browser & rerun tests with every change
 ```
 
 ## How-to
