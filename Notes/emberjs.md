@@ -95,6 +95,10 @@ ember t
 ember t --server  # Open a browser & rerun tests with every change
 
 ember g acceptance-test $testname
+
+# Mirage (back-end mocking)
+ember install ember-cli-mirage
+ember g mirage-model $modelname
 ```
 
 ## How-to
