@@ -192,7 +192,7 @@ export default class NewController extends Controller {
 ```
 
 ### Testing
-Use `ember install ember-test-selectors`! It puts data-test automatically on components, but strips those in production.
+Use `ember install ember-test-selectors`! It puts data-test- automatically on components, but strips those in production.
 
 
 
