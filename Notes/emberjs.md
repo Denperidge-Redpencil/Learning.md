@@ -191,6 +191,10 @@ export default class NewController extends Controller {
 }
 ```
 
+### Testing
+Use `ember install ember-test-selectors`! It puts data-test automatically on components, but strips those in production.
+
+
 
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
