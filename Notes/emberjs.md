@@ -244,6 +244,21 @@ Components are isolated, but you can still do this with a bit of a roundabout wa
 Use `ember install ember-test-selectors`! It puts data-test- automatically on components, but strips those in production.
 
 
+### Using a helper in templates & js simulteanously
+```js
+// app/helpers/example.js
+// Original: export default helper(function example(positional) {
+// Replace with:
+export function example(positional)  {
+    // ...
+    return "";
+}
+
+export default helper(example);
+
+```
+Source: [Rarwe](https://balinterdi.com/rock-and-roll-with-emberjs/)
+
 
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
