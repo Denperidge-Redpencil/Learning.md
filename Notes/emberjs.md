@@ -204,6 +204,21 @@ export default class BandsBandSongsRoute extends Route {
 }
 ```
 
+### Change controller value from a component
+Components are isolated, but you can still do this with a bit of a roundabout way:
+```hbs
+<!-- Template with controller -->
+ <SortButton
+    @sortBy={{fn (set this 'sortBy' '-rating')}}
+/>
+
+<!-- Component -->
+<button 
+    type="button" 
+    {{on "click" (fn @sortBy)}}
+></button>
+```
+
 ### Testing
 Use `ember install ember-test-selectors`! It puts data-test- automatically on components, but strips those in production.
 
