@@ -61,6 +61,9 @@ Sequence example: application(beforeModel -> model ->afterModel) --> route(befor
 
 There's also activate (fires when new route entered, but not when the model changes) and deactivate (fired when a route is completely exited, and not fired when only the model changes)
 
+### Loading templates funky town
+Okay so putting a loading.hbs on any level in templates/ seems to automatically use it while any of its siblings in the route are loading and it just works I think help.
+
 ## Commands
 
 ```sh
