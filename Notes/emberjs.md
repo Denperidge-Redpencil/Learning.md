@@ -63,6 +63,17 @@ There's also activate (fires when new route entered, but not when the model chan
 
 ### Loading templates funky town
 - Okay so putting a `loading.hbs` on any level in templates/ seems to automatically use it while any of its siblings in the route are loading and it just works I think help.
+- To override this behaviour, you can use 
+    ```js
+    export default class ExampleRoute extends Route {
+        // ...
+        @action
+        loading() {
+            // Do things here
+        }
+        // ...
+    }
+    ```
 - For a route specific one, you can make `routename-loading.hbs`
 - The lookup order works from most specific > least specific:
     - route.sub.place-loading
