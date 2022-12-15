@@ -191,6 +191,19 @@ export default class NewController extends Controller {
 }
 ```
 
+### Query parameters
+```js
+export default class BandsBandSongsRoute extends Route {
+    // ...
+    queryParams = {
+        sortBy: {
+            as: 's',
+        }
+    }
+    // ...
+}
+```
+
 ### Testing
 Use `ember install ember-test-selectors`! It puts data-test- automatically on components, but strips those in production.
 
