@@ -55,7 +55,7 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 1. [`beforeModel(transition){}`](https://api.emberjs.comember/release/classes/Route/methods/?anchor=beforeModel)
 2. [`model(params, transition){}`](https://api.emberjs.comember/release/classes/Route/methods/?anchor=model)
 3. [`afterModel(model, transition){}`](https://api.emberjscom/ember/release/classes/Route/methods/?anchor=afterModel)
-4. [`setupController(controller, model, transitions)`(https://api.emberjs.com/ember/release/classes/Route/methodsanchor=setupController)
+4. [`setupController(controller, model, transitions)`](https://api.emberjs.com/ember/release/classes/Route/methodsanchor=setupController)
 
 Sequence example: application(beforeModel -> model ->afterModel) --> route(beforeModel --> model --> afterModel)--> subroute(beforeModel --> model --> afterModel) -->application(setupController) --> route(setupController) --> subroute(setupController)
 
