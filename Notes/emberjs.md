@@ -131,6 +131,8 @@ ember g mirage-model $modelname
     - `this.storage.bands.push()` --> `this.storage` doesn't get changed, so tracking that won't work; track `this.storage.bands` instead.
     - You might have to use `this.storage.bands = tracked([])`, which you can get after running and importing `ember i tracked-built-ins`
 
+Also, in my personal experience, objects + tracked-built-ins works the best. But I might be goofing things.
+
 ```js
 import { tracked } from '@glimmer/tracking';
 
