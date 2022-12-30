@@ -247,6 +247,13 @@ Use `ember install ember-test-selectors`! It puts data-test- automatically on co
 
 For assert.dom() functions, check the [qunit-dom api docs](https://github.com/mainmatter/qunit-dom/blob/master/API.md).
 
+#### Ember Test Helper visit with route name
+```js
+let router = this.owner.lookup('service:router');
+await visit(router.urlFor('route.name'));
+```
+
+
 #### Custom helper function
 
 ```js
