@@ -245,6 +245,8 @@ Components are isolated, but you can still do this with a bit of a roundabout wa
 ### Testing
 Use `ember install ember-test-selectors`! It puts data-test- automatically on components, but strips those in production.
 
+For assert.dom() functions, check the [qunit-dom api docs](https://github.com/mainmatter/qunit-dom/blob/master/API.md).
+
 #### Custom helper function
 
 ```js
