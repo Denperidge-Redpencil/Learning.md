@@ -411,6 +411,23 @@ export default helper(example);
 Source: [Rarwe](https://balinterdi.com/rock-and-roll-with-emberjs/)
 
 
+### Deploying on surge using ember-cli-surge
+```yaml
+    - name: Use ember-cli-surge to build & deploy
+      env:
+        SURGE_LOGIN: ${{ secrets.surgeLogin }}
+        SURGE_TOKEN: ${{ secrets.surgeToken }}
+      run: ./deploy.sh
+      shell: bash
+```
+```bash
+#!/bin/bash
+# This fixes ember surge cli not auto exiting, thus forever keeping the GitHub Action going
+npx ember surge &
+sleep 180
+```
+
+
 ## Links
 - Ember Inspector for [Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi) & [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 - Thanks to [Rock And Roll with Ember Octane](https://balinterdi.com/rock-and-roll-with-emberjs/)
