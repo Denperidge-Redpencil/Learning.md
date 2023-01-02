@@ -96,6 +96,83 @@ There's also activate (fires when new route entered, but not when the model chan
 The best explanation is this diagram created by [Andy del Valle](https://medium.com/swlh/understanding-information-flow-in-react-data-down-action-up-b6c792a8b010)!
 ![The actions-up-data-down diagram created by Andy del Valle](../Assets/actions-up-data-down-Andy-del-Valle.webp)
 
+### Testing
+Okay this is a bit funky town.
+- As with testing any project, Ember test can be written before or after developing things.
+- You can seemingly create any folder structure you want, as long as your filename follows `*-test.js`.
+- The default testing framework is `qunit` but this can be replaced.
+    - The [Ember.js docs](https://guides.emberjs.com/release/testing/testing-tools/) mention `Mocha/Chai DOM`.
+    - I've seen a lot of people online use [Sinonjs](https://sinonjs.org/), especially due to the time manipulation capabilities.
+- You can use Ember(cli) Mirage to stub servers.
+
+There are a few types of tests, with examples imported & simplified from Ember docs
+- Unit tests
+    - Fast, tests specific functions & code.
+    - Default for adapters, controllers, initializers, models, serializers, services & utilities according to the docs. But it seems that these are also the default for routes
+    - Looks like the following:
+        ```js
+        module('Unit | Controller | posts', function(hooks) {
+            setupTest(hooks);
+
+            test('should update A and B on setProps action', function(assert) {
+                assert.expect(4);
+                let controller = this.owner.lookup('controller:posts');
+                controller.send('setProps', 'Testing Rocks!');
+                assert.equal(controller.propB, 'Testing Rocks!', 'propB updated');
+            });
+        });
+        ```
+
+- Rendering/integration tests
+    - Okay speed, test individual rendering
+    - Default for components & helpers 
+    - Rendering is the new name, but currently ember cli seems to still use integration.
+    - Looks like the following:
+        ```js
+        module('Integration | Helper | format currency', function(hooks) {
+            setupRenderingTest(hooks);
+
+            test('formats 199 with $ as currency sign', async function(assert) {
+                this.set('value', 199);
+                this.set('sign', '$');
+                await render(hbs`{{format-currency value sign=sign}}`);
+                assert.equal(this.element.textContent.trim(), '$1.99');
+            });
+        });
+        ```
+
+- Application/acceptance tests
+    - Slow, tests the total package
+    - View how different things interact with eachother.
+    - Application is the new name, but currently ember cli seems to still use acceptance.
+    - Looks like the following:
+        ```js
+        module('Acceptance | posts', function(hooks) {
+            setupApplicationTest(hooks);
+
+            test('should add new post', async function(assert) {
+                await visit('/posts/new');
+                await fillIn('[data-test-field="Title"]', 'My new post');
+                await click('[data-test-button="Save"]');
+                assert
+                    .dom('[data-test-post-title]')
+                    .hasText('My new post', 'The user sees the correct title.');
+            });
+        });
+        ```
+
+
+#### Testing route-specific rendering
+Imagine this: you have a route that works independant of anything else. A good example would be a contact form!
+Testing its internal stuff would be ideal for unit tests. But what if you wanna test the *rendering* of the route, independant of the rest of the application?
+
+Unit tests are out of the question: they do not have any rendering capabilities. Unit route testing is for internal functions & actions, not the rendering.
+
+So instead, with the information gained from the Ember docs/written above, my instinct would say "rendering test". But I haven't been able to see any way to render routes independently à la ```render(hbs`{{route}}`)```.
+
+
+So acceptance testing is the only option left, but Ember doesn't suggest nor facilitate route-specific acceptance testing by default. `ember generate route-test` creates a unit test. The auto-generated test is also unit. The `visit` helper (that seems to be the main method of selecting & rendering what to test in acceptance testing) does *not* take a route name. It only takes a path, and that would be an incredibly shakey way to test. I did find [a workaround for this](#ember-test-helper-visit-with-route-name), so at the moment that seems like the 'best' option.
+
 
 
 ---
