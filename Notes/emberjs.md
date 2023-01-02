@@ -44,9 +44,9 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     export default class BandsBandSongsRoute extends Route {
         model() {
             let band = this.modelFor('bands.band');
-                return band.songs;
-            }
+            return band.songs;
         }
+    }
     ```
 
 ### Components
