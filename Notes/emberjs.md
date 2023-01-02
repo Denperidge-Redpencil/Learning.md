@@ -39,6 +39,15 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - This has some implications! If you load in things in bands.band, navigate to bands.band.details, and then to `<LinkTo @route="bands.band>`, it will actually link to bands.band.index. That does *not* require it to pass bands.band, and thus it won't, and the loading happening within bands.band won't execute
         - But don't change the LinkTo to bands.band.index, because then it will goof some CSS stuff; bands.band won't be the active route then, but bands.band.index. Bands.band.index is not a parent of bands.band.songs or bands.band.details, so those links won't be marked as active and that's just goofy and also this is super hard to explain so check page 166 of Rock & Roll with EmberJS in case of doubt.
         - Also, if you do `<LinkTo @model={{item.band}}>` instead of `<LinkTo @model={{item.band.id}}>` (thus the dynamic segment of :id and a context object (band object)) the model hook will only fire on a fresh reload, and not from pressing the link
+- You can use modelFor to get the parent routes' model.
+    ```js
+    export default class BandsBandSongsRoute extends Route {
+        model() {
+            let band = this.modelFor('bands.band');
+                return band.songs;
+            }
+        }
+    ```
 
 ### Components
 - Mostly self contained so they can be moved across applications
@@ -49,7 +58,8 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
 - The `@action` decorator (from `'@ember/object'`) is only needed if the function gets called from the template
 - Controllers are singletons (single instances). If that gives any issues, use `resetController(controller) { /* reset values here */ }`
 - The `on` method creates listeners. On components, you have to use `off` to unregister, but controllers are only created once and remain until the app is closed, so `off` is not necessary.
-
+- Controllers seem to be in a weird limbo state in terms of how long they'll remain useful or best practice, as often a component or route can better be utilised. The best rule of thumb I've found is from Rock & Roll with Ember: `The best way to think about [controllers] is
+that they are top-level components for a specific route, with a few peculiarities...`
 
 ### Routes hook order
 1. [`beforeModel(transition){}`](https://api.emberjs.comember/release/classes/Route/methods/?anchor=beforeModel)
@@ -81,6 +91,16 @@ There's also activate (fires when new route entered, but not when the model chan
     - route.sub.loading / route.sub-loading
     - route.loading / route-loading
     - loading / application.loading
+
+### Data down actions up
+The best explanation is this diagram created by [Andy del Valle](https://medium.com/swlh/understanding-information-flow-in-react-data-down-action-up-b6c792a8b010)!
+![The actions-up-data-down diagram created by Andy del Valle](../Assets/actions-up-data-down-Andy-del-Valle.webp)
+
+
+
+---
+
+
 
 ## Commands
 
