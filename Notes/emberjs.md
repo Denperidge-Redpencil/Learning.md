@@ -39,7 +39,7 @@ undefined/null properties get ignored in Handlebars. This gives cleaner output a
     - This has some implications! If you load in things in bands.band, navigate to bands.band.details, and then to `<LinkTo @route="bands.band>`, it will actually link to bands.band.index. That does *not* require it to pass bands.band, and thus it won't, and the loading happening within bands.band won't execute
         - But don't change the LinkTo to bands.band.index, because then it will goof some CSS stuff; bands.band won't be the active route then, but bands.band.index. Bands.band.index is not a parent of bands.band.songs or bands.band.details, so those links won't be marked as active and that's just goofy and also this is super hard to explain so check page 166 of Rock & Roll with EmberJS in case of doubt.
         - Also, if you do `<LinkTo @model={{item.band}}>` instead of `<LinkTo @model={{item.band.id}}>` (thus the dynamic segment of :id and a context object (band object)) the model hook will only fire on a fresh reload, and not from pressing the link
-- You can use modelFor to get the parent routes' model.
+- You can use `modelFor` to get the parent routes' model.
     ```js
     export default class BandsBandSongsRoute extends Route {
         model() {
