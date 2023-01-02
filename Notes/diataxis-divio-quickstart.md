@@ -3,7 +3,7 @@ An attempt at boiling down the amazing [30min talk/documentation](https://docume
 
 ## Does your documentation include...
 
-### Tutorials
+### Tutorials?
 For each tutorial: write as if you're *teaching a child how to cook*.
 
 Checklist:
@@ -33,7 +33,7 @@ Checklist:
 - [ ] Doesn't [explain basic concepts](#tutorials)
 - [ ] Fully describes the machinery
 
-### Discussions/background material
+### Discussions/background material?
 For each background material: write as if you're writing about the *history and context* of a subject.
 
 Checklist:
