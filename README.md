@@ -7,6 +7,7 @@ There's a [repo](https://github.com/Denperidge/Learning.md) in case you want to 
 - [Diataxis/Divio documentation guidelines](Notes/diataxis-divio-quickstart.md)
 - [SPARQL](Notes/sparql.md)
 - [Ember.js](Notes/emberjs.md)
+- [Semantic.works](Notes/semantic-works.md)
 
 ### Other notes/shadow realm
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
