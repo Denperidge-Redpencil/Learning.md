@@ -1,4 +1,25 @@
 # Semantic.works
+
+## Docker-Ember
+### Install
+A way to install [docker-ember](https://github.com/madnificent/docker-ember) without having to change your path, compliant with Linux directory standards (I think), and having it all neatly tucked away.
+```bash
+cd /usr/local/lib/
+git clone https://github.com/madnificent/docker-ember.git
+cd ../bin/
+ln -s ../lib/docker-ember/bin/* .
+```
+Usually symbolic links are made using absolute paths, but in /usr/local/ it's not unheard of to use relative (npm, for example, does this).
+
+### Uninstall
+```bash
+cd /usr/local/bin/
+rm ed edi edl eds
+cd ../lib/
+rm -rf docker-ember/
+```
+
+
 ## Kaleidos diagram recreation
 ```mermaid
 graph TD
