@@ -11,6 +11,8 @@ ln -s ../lib/docker-ember/bin/* .
 ```
 Usually symbolic links are made using absolute paths, but in /usr/local/ it's not unheard of to use relative (npm, for example, does this).
 
+---
+
 ### User namespace
 To make sure all generated files aren't owned by root, edit `/etc/docker/daemon.json`
 ```json
@@ -29,6 +31,7 @@ echo "$( whoami ):$(id -g):65536" |  sudo tee -a /etc/subgid
 
 You might have to restart the docker service using `systemctl restart docker.service`. If Docker fails to start, you can use `dockerd --debug`.
 
+---
 
 ### Uninstall
 ```bash
@@ -37,6 +40,9 @@ rm ed edi edl eds
 cd ../lib/
 rm -rf docker-ember/
 ```
+
+
+<br><br>
 
 
 ## Kaleidos diagram recreation
