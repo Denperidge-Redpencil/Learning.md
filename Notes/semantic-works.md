@@ -57,6 +57,13 @@ cd ../lib/
 rm -rf docker-ember/
 ```
 
+## Full-reset a crashed virtuoso container
+Note: this will probably remove all data. So don't do this if there's important data. But if you're like me and had a goofed container from minute 1, here's how you fully remake it!
+
+```
+docker-compose rm -fs database
+rm data/db/{virtuoso*,.backup_restored,.data_loaded,.dba_pwd_set}
+```
 
 <br><br>
 
