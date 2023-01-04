@@ -58,6 +58,14 @@ Syntax:
 ## Structure
 Note: you can test out the triplydb/pokemon examples [here](https://triplydb.com/academy/-/queries/group-pattern-5/1)
 
+Okay, the value you provide and where you put ?variables changes things
+```sql
+WHERE {
+  ?thing rdf:type ?type .
+}
+```
+Queries everything with rdf:type for example
+
 ### Basic spo select
 ```sql
 # Prologue
