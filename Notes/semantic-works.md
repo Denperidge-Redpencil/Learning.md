@@ -65,6 +65,55 @@ docker-compose rm -fs database
 rm data/db/{virtuoso*,.backup_restored,.data_loaded,.dba_pwd_set}
 ```
 
+## mu-migrations-service
+Make sure to:
+- Use the http://mu.semte.ch/application graph
+- define mu:uuid
+
+```sql
+PREFIX bands: <http://mu.semte.ch/vocabularies/ext/bands/>
+PREFIX albums: <http://mu.semte.ch/vocabularies/ext/albums/>
+PREFIX songs: <http://mu.semte.ch/vocabularies/ext/songs/>
+PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
+PREFIX mu: <http://mu.semte.ch/vocabularies/core/>
+
+INSERT DATA {
+  GRAPH <http://mu.semte.ch/application> {
+    bands:metallica a ext:Band;
+      bands:name "Metallica";
+      mu:uuid "ae0987ea98ea09870e980e9a0".
+    bands:kayaproject a ext:Band;
+      bands:name "Kaya Project";
+      mu:uuid "be0987ea98ea09870e980e9a0".
+    bands:ledzeppelin a ext:Band;
+      bands:name "Led Zeppelin";
+      mu:uuid "ce0987ea98ea09870e980e9a0".
+    bands:kayaproject a ext:Band;
+      bands:name "Pearl Jam";
+      bands:description "Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.";
+      mu:uuid "de0987ea98ea09870e980e9a0".
+    bands:radiohead a ext:Band;
+      bands:name "Radiohead";
+      mu:uuid "ee0987ea98ea09870e980e9a0".
+    bands:redhotchilipeppers a ext:Band;
+      bands:name "Red Hot Chili Peppers";
+      mu:uuid "fe0987ea98ea09870e980e9a0".
+
+      #ext:hasAlbum albums:masterOfPuppets, albums:garageInc;
+      #mu:uuid "ae0987ea98ea09870e980e9a0".
+    # albums:masterOfPuppets
+    #   a ext:Album;
+    #   ext:title "Master of Puppets";
+    #   ext:hasSong songs:Battery, songs:MasterOfPuppets";
+    #   mu:uuid "745ea47ea64587ea".
+    # songs:Battery
+    #     a ext:Song;
+    #     ext:title "Battery";
+    #     mu:uuid "5643aoe7645a74aoe654".
+  }
+}
+```
+
 <br><br>
 
 
