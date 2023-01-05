@@ -116,6 +116,21 @@ INSERT DATA {
 
 <br><br>
 
+## Madnificent's troubleshooting search path
+```mermaid
+graph TD
+    one[do we hit mu-cl-resources?]
+    two[is the type the type I expect it to be?]
+    three[is there data in the triplestore of that type?]
+    four["where is the data of that type (graphs)"]
+    five[which properties are known for that type?]
+    six[is mu-authorization involved]
+    seven[does mu-authorization fetch data from where it's at?]
+    
+    one-->two-->three-->four-->five-->six-->seven
+```
+
+
 
 ## Kaleidos diagram recreation
 ```mermaid
