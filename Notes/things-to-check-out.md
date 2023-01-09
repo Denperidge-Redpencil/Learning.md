@@ -1,0 +1,26 @@
+# Things to check out
+
+<details>
+    <summary>Foreword-ish</summary>
+
+
+    I will be honest: at the point of typing this, the only alternative for me to work on would be continuing [semantikeys](https://github.com/Denperidge-Redpencil/semantikeys) and I am not feeling that right now. I think the toothache I have is making me catty (pun not intended) and it's 6am.
+
+    My brain was pingponging as it does; and recalled mentions of things like rocket.chat vs matrix and vendor-lockin being relevant topics. Then I recalled seeing score spec which could be relevant. Then that kept bouncing so I decided I should probably just do a write-up because I hate to admit that among my favourite activities are painstaking research and write-ups.
+
+
+</details>
+
+
+## Rocketchat - Matrix bridge
+[blog announcement](https://matrix.org/blog/2022/05/30/welcoming-rocket-chat-to-matrix) - [docs](https://docs.rocket.chat/guides/administration/admin-panel/settings/federation/matrix-bridge)
+
+Moving platforms sucks. Because there's no good way to do it. People are used to the workflows and UI's of the previous thing, and may not like the new thing. But using two different but functionally similar platforms is how you get miscommunications. This bridge might allow a slow transition! I wanna test if this perhaps could even import previous conversations. If you're reading this and it hasn't been strikethroughed, I haven't yet. But either way, it's worth checking out.
+
+
+
+## Score spec
+[repo](https://github.com/score-spec/spec) - [website](https://score.dev/)
+
+Score is essentially a container/workload configuration tool that translates into {Docker, Kubernetes, custom stuff}. Switching to Score would possibly be very time consuming and not worth the effort, but it is good to keep this jotted down somewhere; in case other container technologies are to be implemented or Docker begins being wack.
+
