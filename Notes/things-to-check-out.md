@@ -15,8 +15,15 @@ My brain was pingponging as it does; and recalled mentions of things like rocket
 ## Rocketchat - Matrix bridge
 [blog announcement](https://matrix.org/blog/2022/05/30/welcoming-rocket-chat-to-matrix) - [docs](https://docs.rocket.chat/guides/administration/admin-panel/settings/federation/matrix-bridge)
 
-Moving platforms sucks. Because there's no good way to do it. People are used to the workflows and UI's of the previous thing, and may not like the new thing. But using two different but functionally similar platforms is how you get miscommunications. This bridge might allow a slow transition! I wanna test if this perhaps could even import previous conversations. If you're reading this and it hasn't been strikethroughed, I haven't yet. But either way, it's worth checking out.
+Moving platforms sucks. Because there's no good way to do it. People are used to the workflows and UI's of the previous thing, and may not like the new thing. But using two different but functionally similar platforms is how you get miscommunications. This bridge might allow a slow transition! I wanna test if this perhaps could even import previous conversations. ~~If you're reading this and it hasn't been strikethroughed, I haven't yet.~~ But either way, it's worth checking out.
 
+### Update: findings
+
+See [denperidge-redpencil/rockatrix](https://github.com/Denperidge-Redpencil/rockatrix) to test it out for yourself!
+
+- Some federated functionality is [locked behind enterprise editon and/or not encryptable](https://docs.rocket.chat/guides/administration/admin-panel/settings/federation/matrix-bridge/matrix-users-guide/create-a-federated-rooms#creating-a-multi-user-direct-message-using-slash-command-enterprise-edition-only)
+- The Rocket.chat settings say the following: `No user should connect to the homeserver with third party clients, only Rocket.Chat`. I don't know if this refers to the people wanting to send messages through rocket.chat itself to Matrix users, or if they mean that all Matrix traffic should go through Rocket.chat.
+    - The [docs](https://docs.rocket.chat/guides/administration/admin-panel/settings/federation/matrix-bridge/matrix-admin-guide/matrixbridge-configuration) say `We strongly recommend not connecting to this Matrix homeserver using other Matrix clients, if you want to do that, please configure another Matrix homeserver instance.`.
 
 
 ## Score spec
