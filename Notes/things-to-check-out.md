@@ -39,7 +39,7 @@ Okay first of all, lets get a few of the confusing things out of the way
 
 - A bunch of these I have found on the [gitea awesome list](https://gitea.com/gitea/awesome-gitea#devops). This is because Gitea is self-hostable, and the (seemingly) most free hosted git service [Codeberg](https://codeberg.org/) uses Gitea and is even [linked on the gitea page](gitea.com).
 - Woodpecker is an open source fork from the last Drone commit before their license became proprietary.
-- Drone =/= Haskell, however, Haskell *did* buy Drone.
+- Drone =/= Harness, however, Harness *did* [buy Drone](https://www.prnewswire.com/news-releases/harness-acquires-continuous-integration-pioneer-droneio-and-commits-to-open-source-301106473.html) and Drone is becoming Harness Community Edition.
 - Gitea.com notes that it uses gitea to developer gitea which is great and it also notes that this practice is called [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) which brightens my day.
 
 
