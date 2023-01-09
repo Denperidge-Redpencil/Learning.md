@@ -24,3 +24,23 @@ Moving platforms sucks. Because there's no good way to do it. People are used to
 
 Score is essentially a container/workload configuration tool that translates into {Docker, Kubernetes, custom stuff}. Switching to Score would possibly be very time consuming and not worth the effort, but it is good to keep this jotted down somewhere; in case other container technologies are to be implemented or Docker begins being wack.
 
+
+
+## GitHub Actions
+I love GitHub Actions. I don't make a profit of my personal projects, and Actions allows me to build & deploy to Pages and Surge without having to worry about building everything locally and then ftp/ssh'ing it into another location. I bring that knowledge into my work, because streamlining & automating development is a very worthwhile pursuit. That being said, if GitHub decides to change Actions/Pages, that would not be ideal, so I feel apprehensive about recommendng/
+
+Here's a few things that might be interesting
+
+### Locally running Actions
+This is more of a band-aid if anything in terms of safety around GitHub Actions (as it is merely a local implementation of GitHub Actions), but it's still good to write down: https://github.com/nektos/act.
+
+### Jekyll vs CircleCI vs Drone vs Haskell vs Woodpecker
+Okay first of all, lets get a few of the confusing things out of the way
+
+- A bunch of these I have found on the [gitea awesome list](https://gitea.com/gitea/awesome-gitea#devops). This is because Gitea is self-hostable, and the (seemingly) most free hosted git service [Codeberg](https://codeberg.org/) uses Gitea and is even [linked on the gitea page](gitea.com).
+- Woodpecker is an open source fork from the last Drone commit before their license became proprietary.
+- Drone =/= Haskell, however, Haskell *did* buy Drone.
+- Gitea.com notes that it uses gitea to developer gitea which is great and it also notes that this practice is called [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) which brightens my day.
+
+
+
