@@ -1,12 +1,12 @@
 # Things to check out
 
 <details>
-    <summary>Foreword-ish</summary>
+<summary>Foreword-ish</summary>
 
 
-    I will be honest: at the point of typing this, the only alternative for me to work on would be continuing [semantikeys](https://github.com/Denperidge-Redpencil/semantikeys) and I am not feeling that right now. I think the toothache I have is making me catty (pun not intended) and it's 6am.
+I will be honest: at the point of typing this, the only alternative for me to work on would be continuing [semantikeys](https://github.com/Denperidge-Redpencil/semantikeys) and I am not feeling that right now. I think the toothache I have is making me catty (pun not intended) and it's 6am.
 
-    My brain was pingponging as it does; and recalled mentions of things like rocket.chat vs matrix and vendor-lockin being relevant topics. Then I recalled seeing score spec which could be relevant. Then that kept bouncing so I decided I should probably just do a write-up because I hate to admit that among my favourite activities are painstaking research and write-ups.
+My brain was pingponging as it does; and recalled mentions of things like rocket.chat vs matrix and vendor-lockin being relevant topics. Then I recalled seeing score spec which could be relevant. Then that kept bouncing so I decided I should probably just do a write-up because I hate to admit that among my favourite activities are painstaking research and write-ups.
 
 
 </details>
