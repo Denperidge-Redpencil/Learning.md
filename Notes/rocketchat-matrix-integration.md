@@ -14,23 +14,27 @@ See [denperidge-redpencil/rockatrix](https://github.com/Denperidge-Redpencil/roc
 As of writing, I *have* succesfully been able to integrate this.
 I've screen recorded the footage below, but I'll summarise my findings here.
 
-*tl;dr: no message history, new messages get synced with barely any delay and only a few issues/quirks.* 
+*tl;dr: no message history, new messages & message edits get synced with barely any delay and only a few issues/quirks.* 
 
 
 - It works by making a gateway between two specific channels/rooms, and will send new messages to the other platform near immmediately. It will show a note of the source protocol as well as the username of who sent it, and of course the message contents.
+- Attachments get synced as well.
+- Message edits in matrix get synced to rocketchat, but rocketchat not to matrix. See [the docs](https://github.com/42wim/matterbridge/wiki/Features#message-edits-and-deletes) for more information.
 - Formatting *generally* gets copied over well. Some issues with # headings, but **bold** and *italics* seem to go well both ways. 
 - Besides making a bot user on both Rocket.chat & Matrix, there is no setup needed within the services in question.
-- It needs to be actively run, and does *not* import the message history
+- It needs to be actively run, and does *not* import the message history.
 - Threads don't work but also don't not work. The messages still get sent, but not put in a thread on the other platform (they will just appear below).
 - You can seemingly set up as many channel connections as wanted.
 - The matrix & rocket.chat channel are allowed to have different names (cool), but need to be explicitly defined (less cool). There doesn't seem to be a way to say "if something is sent in any channel, send it to the channel with the same name on the other platform".
 
-![Footage of the Matterbridge in action](../Assets/Rocketchat-Matrix-Matterbridge.webm)
+![Footage of the Matterbridge in action](../Assets/Rocketchat-Matrix-Matterbridge-v2.webm)
+
+[Uncompressed footage](../Assets/Rocketchat-Matrix-Matterbridge-v2-uncompressed.mkv) - [First footage recording](../Assets/Rocketchat-Matrix-Matterbridge-v1.webm)
 
 ---
 
 ## Official bridge
-As of writing, I have *not* succesfully integrated this yet.
+As of writing, I have *not* succesfully integrated this yet. But I have tried. A lot. Automated setup's Traefik kept getting permission denied, manual setup didn't give errors but also no results.
 
 ### Rocketchat supports matrix but with an asterisk
 - Some federated functionality is [locked behind enterprise editon and/or not encryptable](https://docs.rocket.chat/guides/administration/admin-panel/settings/federation/matrix-bridge/matrix-users-guide/create-a-federated-rooms#creating-a-multi-user-direct-message-using-slash-command-enterprise-edition-only)
