@@ -8,7 +8,8 @@ There's a [repo](https://github.com/Denperidge/Learning.md) in case you want to 
 - [SPARQL](Notes/sparql.md)
 - [Ember.js](Notes/emberjs.md)
 - [Semantic.works](Notes/semantic-works.md)
-- [Research/things to check out](Notes/things-to-check-out.md)
+- [Research - Integrating Rocket.chat & Matrix](Notes/rocketchat-matrix-integration.md)
+- [Research - things to check out](Notes/things-to-check-out.md)
 
 ### Other notes/shadow realm
 I also have additional notes, which are notes that I've mainly written down for myself because I don't understand them well enough (yet) to integrate them in the original. So be warned!
