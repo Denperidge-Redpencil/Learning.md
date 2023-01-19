@@ -13,7 +13,7 @@ Checklist:
 - [ ] Works for everyone, with minimal explanation
 - [ ] Also teaches what ***you*** take for granted
 
-### How-To's?
+### How-To guides?
 For each how-to: write down how to achieve **1** specific thing as if it were a *cooking recipe*.
 
 Checklist:
@@ -23,17 +23,17 @@ Checklist:
 - [ ] Flexible: works for different but similar uses 
 
 
-### References?
+### A reference?
 For each reference: write as if you are writing an *encyclopedia* article.
 
 Checklist:
 
 - [ ] Structured like the codebase
-- [ ] Doesn't [explain common tasks](#how-tos)
-- [ ] Doesn't [explain basic concepts](#tutorials)
+- [ ] Doesn't explain common tasks ([how-to guides](#how-to-guides))
+- [ ] Doesn't explain basic concepts ([tutorials](#tutorials))
 - [ ] Fully describes the machinery
 
-### Discussions/background material?
+### Explanations: discussions/background material?
 For each background material: write as if you're writing about the *history and context* of a subject.
 
 Checklist:
