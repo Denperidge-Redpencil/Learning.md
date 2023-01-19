@@ -17,10 +17,10 @@ OKGREEN = '\033[92m'
 FAIL = '\033[91m'
 ENDC = '\033[0m'
 
-TUTORIALS = r"#.*tutorial"
-HOW_TO = r"#.*how.*to"
-REFERENCE = r"#.*reference"
-EXPLANATION = r"#.*(explanation|discussion|background.*material)"
+TUTORIALS = r"^#.*tutorial"
+HOW_TO = r"^#.*how\W*to"
+REFERENCE = r"^#.*reference"
+EXPLANATION = r"^#.*(explanation|discussion|background\W*material)"
 
 # Centerring after the function seems to not work
 def ok(center, string="OK"):
