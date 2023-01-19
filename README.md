@@ -5,6 +5,7 @@ There's a [repo](https://github.com/Denperidge/Learning.md) in case you want to 
 
 ## Notes
 - [Diataxis/Divio documentation guidelines](Notes/diataxis-divio-quickstart.md)
+- [Documentation](Notes/docs.md)
 - [SPARQL](Notes/sparql.md)
 - [Ember.js](Notes/emberjs.md)
 - [Semantic.works](Notes/semantic-works.md)
