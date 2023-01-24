@@ -1,3 +1,7 @@
+# Archived
+Note: this is the original draft of the notes! They've been integrated into [Denperidge-Redpencil/project](https://github.com/Denperidge-Redpencil/project).D
+
+
 # Divio Docs Quickstart
 An attempt at boiling down the amazing [30min talk/documentation](https://documentation.divio.com/) on how to write better documentation into something unobtrusive enough for people familiar with it to use as a checklist, but instructive enough for people unfamiliar with it to somewhat do the thing.
 
