@@ -27,7 +27,7 @@ I've screen recorded the footage below, but I'll summarise my findings here.
 - You can seemingly set up as many channel connections as wanted.
 - The matrix & rocket.chat channel are allowed to have different names (cool), but need to be explicitly defined (less cool). There doesn't seem to be a way to say "if something is sent in any channel, send it to the channel with the same name on the other platform".
 
-https://github.com/Denperidge-Redpencil/Learning.md/assets/27348469/424cb716-87f3-434d-93d0-8e16582e4dac
+<video width="640" height="360" src="https://github.com/Denperidge-Redpencil/Learning.md/assets/27348469/424cb716-87f3-434d-93d0-8e16582e4dac"></video>
 
 
 [Link for if the above footage doesn't embed](../Assets/Rocketchat-Matrix-Matterbridge-v2.mp4) - [Uncompressed footage](../Assets/Rocketchat-Matrix-Matterbridge-v2-uncompressed.mkv) - [First footage recording](../Assets/Rocketchat-Matrix-Matterbridge-v1.webm)
