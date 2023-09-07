@@ -1,3 +1,6 @@
+# Archival
+Pretty much all content in here has been imported to [my blog at redpencil.denperidge.com](https://redpencil.denperidge.com/all-of-the-categories/shadow-realm-archive/)!
+
 # Denperidge's Learning.md
 I'm learning new languages and frameworks! So I'm keeping notes on the things I've learned so I can have that to look back upon because memory and stuff.
 
